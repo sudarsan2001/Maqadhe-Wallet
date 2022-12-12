@@ -1,0 +1,95 @@
+{
+ "autoname": "field:entity_id",
+ "creation": "2022-11-17 09:41:28.859485",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entity_id",
+  "customer_id",
+  "customer",
+  "customer_name",
+  "customer_mail",
+  "total_amount",
+  "remaining_amount",
+  "used_amount",
+  "updated_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "entity_id",
+   "fieldtype": "Data",
+   "label": "Entity Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Id"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_mail",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Mail"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount"
+  },
+  {
+   "fieldname": "used_amount",
+   "fieldtype": "Currency",
+   "label": "Used Amount"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Datetime",
+   "label": "Updated At"
+  }
+ ],
+ "modified": "2022-12-12 15:53:10.694356",
+ "modified_by": "Administrator",
+ "module": "Maqadhe Wallet",
+ "name": "Wallet Balances",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

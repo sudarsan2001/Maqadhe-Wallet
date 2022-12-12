@@ -1,0 +1,172 @@
+{
+ "autoname": "field:entity_id",
+ "creation": "2022-11-28 11:11:51.817116",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entity_id",
+  "customer_id",
+  "customer_mail",
+  "mode_of_payment",
+  "amount",
+  "api_status",
+  "status",
+  "retry_limit",
+  "action",
+  "order_id",
+  "transaction_at",
+  "currency_code",
+  "curr_amount",
+  "transaction_note",
+  "sender_id",
+  "sender_type",
+  "bank_details",
+  "increment_id",
+  "base_currency_code",
+  "is_sync",
+  "reference_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "entity_id",
+   "fieldtype": "Data",
+   "label": "Entity ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "label": "Customer ID"
+  },
+  {
+   "fieldname": "customer_mail",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Mail"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "api_status",
+   "fieldtype": "Data",
+   "label": "API Status"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nSynced"
+  },
+  {
+   "default": "5",
+   "fieldname": "retry_limit",
+   "fieldtype": "Int",
+   "label": "Retry Limit"
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Action"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order ID"
+  },
+  {
+   "fieldname": "transaction_at",
+   "fieldtype": "Data",
+   "label": "Transaction At"
+  },
+  {
+   "fieldname": "currency_code",
+   "fieldtype": "Data",
+   "label": "Currency Code"
+  },
+  {
+   "fieldname": "curr_amount",
+   "fieldtype": "Currency",
+   "label": "Current Amount"
+  },
+  {
+   "fieldname": "transaction_note",
+   "fieldtype": "Data",
+   "label": "Transaction Note"
+  },
+  {
+   "fieldname": "sender_id",
+   "fieldtype": "Data",
+   "label": "Sender ID"
+  },
+  {
+   "fieldname": "sender_type",
+   "fieldtype": "Data",
+   "label": "Sender Type"
+  },
+  {
+   "fieldname": "bank_details",
+   "fieldtype": "Data",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "increment_id",
+   "fieldtype": "Data",
+   "label": "Increment ID"
+  },
+  {
+   "fieldname": "base_currency_code",
+   "fieldtype": "Data",
+   "label": "Bas e Currency Code"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_sync",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Sync"
+  },
+  {
+   "fieldname": "reference_id",
+   "fieldtype": "Link",
+   "label": "Reference ID",
+   "options": "Journal Entry"
+  }
+ ],
+ "modified": "2022-12-12 15:52:58.718272",
+ "modified_by": "Administrator",
+ "module": "Maqadhe Wallet",
+ "name": "Connector Wallet Transactions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

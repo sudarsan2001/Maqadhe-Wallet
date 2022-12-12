@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include maqadhe_wallet *.css
+recursive-include maqadhe_wallet *.csv
+recursive-include maqadhe_wallet *.html
+recursive-include maqadhe_wallet *.ico
+recursive-include maqadhe_wallet *.js
+recursive-include maqadhe_wallet *.json
+recursive-include maqadhe_wallet *.md
+recursive-include maqadhe_wallet *.png
+recursive-include maqadhe_wallet *.py
+recursive-include maqadhe_wallet *.svg
+recursive-include maqadhe_wallet *.txt
+recursive-exclude maqadhe_wallet *.pyc
