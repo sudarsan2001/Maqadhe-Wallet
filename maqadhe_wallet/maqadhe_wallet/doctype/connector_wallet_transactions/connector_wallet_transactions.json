@@ -7,25 +7,28 @@
  "field_order": [
   "entity_id",
   "customer_id",
-  "customer_mail",
+  "customer_name",
+  "email",
+  "sender_type",
   "mode_of_payment",
   "amount",
   "api_status",
-  "status",
-  "retry_limit",
   "action",
   "order_id",
-  "transaction_at",
-  "currency_code",
   "curr_amount",
-  "transaction_note",
-  "sender_id",
-  "sender_type",
-  "bank_details",
-  "increment_id",
+  "transaction_at",
+  "column_break_12",
+  "order_increment_id",
+  "order_total",
+  "currency_code",
   "base_currency_code",
-  "is_sync",
-  "reference_id"
+  "sender_id",
+  "bank_details",
+  "transaction_note",
+  "reference_id",
+  "status",
+  "retry_limit",
+  "is_sync"
  ],
  "fields": [
   {
@@ -38,12 +41,6 @@
    "fieldname": "customer_id",
    "fieldtype": "Data",
    "label": "Customer ID"
-  },
-  {
-   "fieldname": "customer_mail",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Customer Mail"
   },
   {
    "fieldname": "mode_of_payment",
@@ -78,9 +75,10 @@
   },
   {
    "fieldname": "action",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Action"
+   "label": "Action",
+   "options": "\ncredit\ndebit"
   },
   {
    "fieldname": "order_id",
@@ -114,8 +112,9 @@
   },
   {
    "fieldname": "sender_type",
-   "fieldtype": "Data",
-   "label": "Sender Type"
+   "fieldtype": "Select",
+   "label": "Sender Type",
+   "options": "Admin credit\nAdmin debit\nRecharge wallet\nUse wallet\nRefund order"
   },
   {
    "fieldname": "bank_details",
@@ -123,14 +122,9 @@
    "label": "Bank Details"
   },
   {
-   "fieldname": "increment_id",
-   "fieldtype": "Data",
-   "label": "Increment ID"
-  },
-  {
    "fieldname": "base_currency_code",
    "fieldtype": "Data",
-   "label": "Bas e Currency Code"
+   "label": "Base Currency Code"
   },
   {
    "default": "0",
@@ -144,9 +138,34 @@
    "fieldtype": "Link",
    "label": "Reference ID",
    "options": "Journal Entry"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Mail"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_increment_id",
+   "fieldtype": "Data",
+   "label": "Order Increment ID"
+  },
+  {
+   "fieldname": "order_total",
+   "fieldtype": "Currency",
+   "label": "Order Total"
   }
  ],
- "modified": "2022-12-12 15:52:58.718272",
+ "modified": "2022-12-13 08:22:00.987521",
  "modified_by": "Administrator",
  "module": "Maqadhe Wallet",
  "name": "Connector Wallet Transactions",

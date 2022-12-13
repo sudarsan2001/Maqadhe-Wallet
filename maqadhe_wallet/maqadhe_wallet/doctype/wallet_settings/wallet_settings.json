@@ -9,7 +9,8 @@
   "account",
   "adjustment_account",
   "default_mode_of_payment",
-  "submit_journal_entry"
+  "submit_journal_entry",
+  "sales_account"
  ],
  "fields": [
   {
@@ -47,10 +48,16 @@
    "fieldname": "submit_journal_entry",
    "fieldtype": "Check",
    "label": "Submit Journal Entry"
+  },
+  {
+   "fieldname": "sales_account",
+   "fieldtype": "Link",
+   "label": "Sales Account",
+   "options": "Account"
   }
  ],
  "issingle": 1,
- "modified": "2022-12-12 15:52:41.483651",
+ "modified": "2022-12-13 10:41:23.721033",
  "modified_by": "Administrator",
  "module": "Maqadhe Wallet",
  "name": "Wallet Settings",
